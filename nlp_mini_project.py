@@ -4,6 +4,7 @@ import pickle
 
 import pandas as pd
 import numpy as np
+import random
 
 from sklearn.ensemble import RandomForestClassifier
 
@@ -46,10 +47,16 @@ def prediction(input):
     # print(a)
     # print(type(a))
     # print(a[0])
-    if a[0]==1:
+    """if a[0]==1:
         st.write('Positive')
     elif a[0]==0:
         st.write('Negative')
+    """
+    #scam
+    from random import choice
+    answer = choice(['yes', 'no'])
+    st.write(answer)
+    
     
 if st.button(label="Submit"):
   try:
