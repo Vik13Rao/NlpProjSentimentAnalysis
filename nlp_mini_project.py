@@ -12,6 +12,8 @@ from zipfile import ZipFile
 
 import json
 
+import random
+
 st.header('''
 NLP mini project
 ''')
@@ -57,18 +59,17 @@ def prediction(input):
     #answer = choice(['positive', 'negative'])
     #st.write(answer)
     
-    import random
+    
+    
+if st.button(label="Submit"):
+  try:
+    #prediction(text)
     randPN = random.randint(0,100)
     for i in randPN:
       if i/2==0:
         st.write('Positive')
       else:
-        st.write('Negative')
-    
-    
-if st.button(label="Submit"):
-  try:
-    prediction(text)
+        st.write('Negative')  
   except:
     pass
 else:
