@@ -54,7 +54,7 @@ def prediction(input):
     
     #scam
     from random import choice
-    answer = choice(['yes', 'no'])
+    answer = choice(['positive', 'negative'])
     st.write(answer)
     
     
