@@ -28,7 +28,7 @@ with open('dictionary.json', 'r') as fp:
 clf = pickle.load(open('model.pkl', 'rb'))
 
 def prediction(input):
-    longest = 2875
+    longest = 999999
     lst5 = input.split(' ')
     lst6 = []
     for each in lst5:
