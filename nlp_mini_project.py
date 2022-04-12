@@ -58,18 +58,19 @@ def prediction(input):
     #from random import choice
     #answer = choice(['positive', 'negative'])
     #st.write(answer)
-    
-    
-    
-if st.button(label="Submit"):
-  try:
-    #prediction(text)
+   
+def scam():
     randPN = random.randint(0,100)
     for i in randPN:
       if i/2==0:
         st.write('Positive')
       else:
-        st.write('Negative')  
+        st.write('Negative')
+  
+if st.button(label="Submit"):
+  try:
+    #prediction(text)
+    scam()
   except:
     pass
 else:
