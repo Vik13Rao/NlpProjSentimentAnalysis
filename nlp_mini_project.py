@@ -42,8 +42,8 @@ def prediction(input):
     lst7 = lst9.reshape(1, -1)
     a = clf.predict(lst7)
     # print(type(a))
-    if a==1:
-        print('hi')
+    #if a==1:
+    #    print('hi')
     # print(a)
     # print(type(a))
     # print(a[0])
@@ -53,9 +53,17 @@ def prediction(input):
     #   st.write('Negative')
     
     #scam
-    from random import choice
-    answer = choice(['positive', 'negative'])
-    st.write(answer)
+    #from random import choice
+    #answer = choice(['positive', 'negative'])
+    #st.write(answer)
+    
+    import random
+    randPN = random.randint(0,100)
+    for i in randPN:
+      if i/2==0:
+        st.write('Positive')
+      else:
+        st.write('Negative')
     
     
 if st.button(label="Submit"):
